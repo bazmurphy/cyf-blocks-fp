@@ -154,7 +154,7 @@ p {
 .deployment {
     margin-top: 0.5rem;
     padding: 1rem;
-    border: 0.3rem solid hsla(279, 58%, 47%, 1);
+    border: 0.2rem solid hsla(279, 58%, 47%, 1);
     border-radius: 0.25rem;
 }
 
@@ -186,7 +186,7 @@ p {
     text-decoration: none;
     background: hsla(190, 77%, 88%, 0.8);
     /* border: 0.5rem solid hsla(201, 100%, 36%, 0.5); */
-    border: 0.3rem solid hsla(279, 58%, 47%, 1);
+    border: 0.2rem solid hsla(279, 58%, 47%, 1);
     border-radius: 0.25rem;
 }
 
