@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,400&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>CYF Blocks Final Project</title>
@@ -14,8 +14,14 @@
 <body>
     <section id="root-container">
 
+        <section id="baz" class="root-cell">
+            <a href="https://github.com/bazmurphy/cyf-blocks-fp" target="_blank"><img src="images/bazavatar.jpeg" alt="" class="avatar"></a>
+            <h1><a href="https://github.com/bazmurphy/cyf-blocks-fp" target="_blank">Baz</a> : CYF Fundamentals Coursework : CYF Blocks Final Project
+            </h1>
+        </section>
+
         <section class="root-cell">
-            <h1>Requirement:</h1>
+            <h1>Requirements:</h1>
             <p>Pick one or more of the following projects, define its requirements by writing the user stories, iteratively develop it
             in CYF Blocks, and ship it!</p>
             <ol>
@@ -27,7 +33,7 @@
         </section>
 
         <section class="root-cell">
-            <h1>Project: 01. Commenting</h1>
+            <h1 class="project-title">Project: 01. Commenting</h1>
             <h2>Requirement:</h2>
             <p>Make it possible for a user to add a comment on your website (the comment won't get saved anywhere, so it will disappear
             when the page is refreshed - we'll work on saving later on)</p>
@@ -46,17 +52,17 @@
                 <section class="user-stories-cell user-stories-mvp-column-heading-who">As a [who]</section>
                 <section class="user-stories-cell user-stories-mvp-column-heading-what">I can [what]</section>
                 <section class="user-stories-cell user-stories-mvp-column-heading-why">so that [why]</section>
-                <section class="user-stories-cell">As a user</section>
-                <section class="user-stories-cell">I can write a comment in an input text box and click a button and it will add my comment to a list of comments on the website</section>
-                <section class="user-stories-cell">so that i can post comments on the website</section>
+                <section class="user-stories-cell user-stories-highlight">As a user</section>
+                <section class="user-stories-cell user-stories-highlight">I can write a comment in an input text box and click a button and it will add my comment to a list of comments on the website</section>
+                <section class="user-stories-cell user-stories-highlight">so that i can post comments on the website</section>
             </section>
             <section>
-                <h1>Working MVP on Blocks:</h1>
+                <h2>Working MVP on Blocks:</h2>
                 <a href="https://blocks.codeyourfuture.io/share.html?v=('j!('blocks!('languageVersion!0~blocks!%5B%7F%7C_clicked%260.%24%5D%3Bx(WTR%24P%60s%3BZh85V'~x!23~y!-529TEXT1!'when%20the%20%7C%20with%20id'~ID!'add-c*'~TEXT2!'is%20clicked')~Os!('HANDLER!('7with_%7C_by_id%26bfuR%2B8r4FNy%7B%2Fln-NWkU'9ID!'c*s-list%5Eadd_%7C%26H%23E%3D%3B(J4%3BH%5Bz-%24tgYI6%3D'9ELEMENT!'li%5Eset_content%26X%25%2FQXoGBi%2Fd(%3Ai%23%5BSX%60('~Os!('VALUE!('shadow!%7Ftext%26B)oKEUyolqQ_%7D_%60%3FGfjs'9TEXT!''))~7get_O_value_with_id%26%3Fy%3D_%60%3F%2C'%60%23)FHYygQP%7DS8'9ID!'O-c*'))))))))))))))%5D))~h!'%3CO%22O-c*%5C'%20type%3D%5C'text%5C'%20placeholder%3D%5C'Your%20c*%5C'%20%2F%40button%22add-c*%5C'%3EAdd%20C*%3C%2Fbutton%40h1%3EC*s%3A%3C%2Fh1%40ul%22c*s-list%5C'%3E%3C%2Ful%3E')*omment7block!%7F9~fields!('Oinput%22%20id%3D%5C'%26'~id!'%40%3E%5Cn%3C%5E')~Os!('STACK!('7%7Celement%7F('type!'%01%7F%7C%5E%40%26%22O97*_" target="_blank" class="share-link">Share Link</a>
                 <img src="images/01-comments/01-comments-blocks-001.png" alt="" class="blocks-screenshot">
             </section>
             <section>
-                <h1>Working MVP on Deployed Site:</h1>
+                <h2>Working MVP on Deployed Site:</h2>
                 <section class="deployment">
                     <input id="input-comment" type="text" placeholder="Your comment" />
                     <button id="add-comment">Add Comment</button>
@@ -77,20 +83,195 @@
                 <section class="user-stories-cell user-stories-iteration-column-heading-who">As a [who]</section>
                 <section class="user-stories-cell user-stories-iteration-column-heading-what">I can [what]</section>
                 <section class="user-stories-cell user-stories-iteration-column-heading-why">so that [why]</section>
-                <section class="user-stories-cell">who</section>
-                <section class="user-stories-cell">what</section>
-                <section class="user-stories-cell">why</section>
-                <section class="user-stories-cell">who</section>
-                <section class="user-stories-cell">what</section>
-                <section class="user-stories-cell">why</section>
-                <section class="user-stories-cell">who</section>
-                <section class="user-stories-cell">what</section>
-                <section class="user-stories-cell">why</section>
+                <section class="user-stories-cell user-stories-highlight">who</section>
+                <section class="user-stories-cell user-stories-highlight">what</section>
+                <section class="user-stories-cell user-stories-highlight">why</section>
+                <section class="user-stories-cell user-stories-highlight">who</section>
+                <section class="user-stories-cell user-stories-highlight">what</section>
+                <section class="user-stories-cell user-stories-highlight">why</section>
+                <section class="user-stories-cell user-stories-highlight">who</section>
+                <section class="user-stories-cell user-stories-highlight">what</section>
+                <section class="user-stories-cell user-stories-highlight">why</section>
             </section>
         </section>
 
         <section class="root-cell">
             <h1>Ship It</h1>
+            <section>
+                <h2>Working Iteration on Deployed Site:</h1>
+                <section class="deployment">
+                    <p>text</p>
+                </section>
+            </section>
+        </section>
+
+        <section class="root-cell">
+            <p>.</p>
+        </section>
+
+        <section class="root-cell">
+            <h1 class="project-title">Project: 02. Shopping Cart Light</h1>
+            <h2>Requirement:</h2>
+            <p>Make it possible to add products to a "shopping cart" (again, we won't be able to check out/pay with what we know so
+            far)</p>
+        </section>
+        
+        <section class="root-cell">
+            <h1>Minimum Viable Product & User Stories</h1>
+            <!--
+                    <p>As always with software development, we start with the simplest thing possible. Let's define the MVP.</p>
+                    <p>What's the minimum set of user stories we could implement for this product to be useful?</p>
+                    <p>Another way to say this is: "What is the minimum viable product?</p>
+                    <p>A user story is a short sentence stating some goal a user can expect to achieve when using the product we are implementing.</p>
+                    -->
+            <section id="user-stories-mvp">
+                <section class="user-stories-cell user-stories-mvp-heading">Minimum Viable Product</section>
+                <section class="user-stories-cell user-stories-mvp-column-heading-who">As a [who]</section>
+                <section class="user-stories-cell user-stories-mvp-column-heading-what">I can [what]</section>
+                <section class="user-stories-cell user-stories-mvp-column-heading-why">so that [why]</section>
+                <section class="user-stories-cell user-stories-highlight">As a user</section>
+                <section class="user-stories-cell user-stories-highlight">I can see a list of products, and next to them are "add to shopping cart" buttons, clicking those buttons will add the product to the shopping cart, the shopping cart will display as a list</section>
+                <section class="user-stories-cell user-stories-highlight">so that i can choose which products i want to buy and place them in the shopping cart</section>
+            </section>
+            <section>
+                <h2>Working MVP on Blocks:</h2>
+                <a href="https://blocks.codeyourfuture.io/share.html?v=('j!('blocks!('languageVersion!0~blocks!%5B%C2%8Dl%3Fe0U%5E1O%3Bac8WaS%2F0%2Cs7'~x!10~y!128%7Fd-banana%C2%81%C2%84TuB%2C'4K%23%5B5Wm%3FcH5%60Bc2F%C2%87%C2%80%C2%82R3hTIMa_%7BO6%25IurkKm%7By%C2%86Banana%F0%9F%8D%8C'))))))))%2C('type!'procedures_defnoreturn'~id!'Njn_GSq4%5En%25JV)%7Dno%2C3h'~x!7~y!-41~extraState!('params!%5B%C2%8Cicons!('comment!('text!'Describe%20this%20function...'~pinned!false~height!80~width!160))%C2%8ENAME%C2%8F%C2%8Awith_element_by_id'~id!'p%5EFA13tu3JgOi%2C%3FT2fUw'%C2%8EID!'shopping-cart%C2%8Aadd_element'~id!'A%3B%5Bgq%5EyWNPyx3gsUDk%3D)'%C2%8EELEMENT!'li%C2%8Aset_content'~id!'8i%24ps-v_%7BDY)%3DQB%5E3'%3Am%2B'~inputs!('VALUE!('shadow!('type!'text'~id!'%3Bh%3B%3DF%25%3D%2Ffz%3FkSS5%7D6%2C'Vv%C2%86'))~%C2%93variables_get'~id!'QIOCflmAm9R%3Fafbtd%23%7D%25'%C2%8EVAR!('%C2%88))))))%C2%83H_eUU%5B%7Bd2b1pZ4%3F38r90'~x!13~y!225%7Fd-mango%C2%81%C2%84hoz%24cIZ%24p3%3DZ)7zZutpE%C2%87%C2%80%C2%827.SfrP0rRA(B6li'%3AhG)%3B%C2%86Mango%F0%9F%A5%AD'%C2%83Zk'%3A.Q%40DO3a%3B%3A%5D%25jz(_0%24'~x!15~y!321%7Fd-pineapple%C2%81%C2%849tAoeJh0Co%2BFHFY)%2BHG*%C2%87%C2%80%C2%82ZLCVrzdr%2BV8h.gu%2CJA4K%C2%86%C2%94'%C2%833Y%2B*0ageNuLlyx4d'%3A%23vV'~x!14~y!422%7Fd-kiwi%C2%81%C2%84W%3D%2F%2C-Ds)jF%3F3Q%230XW.%7Bc%C2%87%C2%80%C2%827(TDH%3A%7D%25(%3Bk%5Ba6_g%2FFM'%3A%C2%86Kiwi%F0%9F%A5%9D'%C2%83%3FXsTcC%40SFQ%7D%7Dz%2F)%3FvbwB'~x!13~y!520%7Fd-watermelon%C2%81%C2%84baWZ6%3BKWZ5o%3A5%2B%2CZ%7DifI%C2%87%C2%80%C2%821%5D*%5B9Qm2N%7C%3F%3APOKVgJ%25p%C2%86%C2%92'%C2%83R)-4XBI%5DH1cA%23%3FDNDRrw'~x!15~y!619%7Fd-peach%C2%81%C2%84_osi0K%40os%2BKk%2C'tr.31W1%C2%87%C2%80%C2%82-eVyX'%3AR%25'%3AD1zk3oF.e%7BM%C2%86Peach%F0%9F%8D%91'%C2%83.h%3B5pd)NzWK%253XA(%400su'~x!14~y!723%7Fd-strawberries%C2%81%C2%84ru*F%2FZ%3FGfOv%24mQ3S0557%C2%87%C2%80%C2%82QEOMj3W%5BmY6V(3zaoV%7D7%C2%86%C2%91'%C2%83h_a%5E)-TBGRav7%2CiE6fbg'~x!13~y!822%7Fd-apple%C2%81%C2%84JxpnUN9%2Ba1FaNA%7D%5D%7CR%3B_%C2%87%C2%80%C2%82N%2Cgud%7C%24WAz_wHTOoYx3%25%C2%86Apple%F0%9F%8D%8F'))))))))%5D)~variables!%5B('name!'x'~id!'%40h3b7FK%40vFg%2F)AjGjSUt')%2C%C2%8Ch!'%5Cn%3Ch3%3EBaz%22s%20Fruit%20Shop%20For%20Smoothies'%3A%20%F0%9F%98%8E%C2%8Bproducts-list%5C'%3E%5Cn%3Cli%C2%90banana%5C'%3EBanana%F0%9F%8D%8C%C2%85banana%26mango%5C'%3EMango%F0%9F%A5%AD%C2%85mango%26pineapple%5C'%3E%C2%94%C2%85pineapple%26kiwi%5C'%3EKiwi%F0%9F%A5%9D%C2%85kiwi%26watermelon%5C'%3E%C2%92%C2%85watermelon%26peach%5C'%3EPeach%F0%9F%8D%91%C2%85peach%26strawberries%5C'%3E%C2%91%C2%85strawberries%26apple%5C'%3EApple%F0%9F%8D%8F%C2%85apple%C2%89%2Ful%3E%5Cn%3Ch3%3EShopping%20Cart%20%F0%9F%9B%92%20%3A%C2%8Bshopping-cart%5C'%3E%3C%2Ful%3E')%26%C2%89li%C2%90%7F%C2%8ETEXT1!'when%20the%20element%20with%20id'~ID!'ad%C2%80e%C2%8F'~params!%5B'parameter'%5D%C2%81'~TEXT2!'is%20clicked')~inputs!('HANDLER!('block!('%C2%82)~inputs!('ARG0!('%C2%93text'~id!'%C2%83))))))))%2C%C2%8D%C2%84type!'procedures_callnoreturn'~id!'%C2%85%3Cbutton%C2%90add-%C2%86'%C2%8ETEXT!'%C2%87'~extraState!('nam%C2%88id!'RxiF%5DFfz%60G%5EN%7D%3AYx.%7D5%5D')%C2%89%5C'%3EAdd%20To%20Shopping%20Cart%3C%2Fbutton%3E%3C%2Fli%3E%5Cn%3C%C2%8A')~inputs!('STACK!('%C2%93%C2%8B%3C%2Fh1%3E%5Cn%3Cul%C2%90%C2%8C('name!'parameter'~%C2%88%5D)~%C2%8D('type!'element_clicked'~id!'%C2%8E~fields!('%C2%8F!'addProductToShoppingCart%C2%90%20id%3D%5C'%C2%91Stawberries%F0%9F%8D%93%C2%92Watermelon%F0%9F%8D%89%C2%93block!('type!'%C2%94Pineapple%F0%9F%8D%8D%01%C2%94%C2%93%C2%92%C2%91%C2%90%C2%8F%C2%8E%C2%8D%C2%8C%C2%8B%C2%8A%C2%89%C2%88%C2%87%C2%86%C2%85%C2%84%C2%83%C2%82%C2%81%C2%80%7F%26_"
+                    target="_blank" class="share-link">Share Link</a>
+                <img src="images/02-shopping-cart-light/02-shopping-cart-light-blocks-001.png" alt="" class="blocks-screenshot">
+            </section>
+            <section>
+                <h2>Working MVP on Deployed Site:</h2>
+                <section class="deployment">
+                    <h3>Baz's Fruit Shop For Smoothies! 😎</h1>
+                    <ul id="products-list">
+                        <li id="banana">Banana🍌<button id="add-banana">Add To Shopping Cart</button></li>
+                        <li id="mango">Mango🥭<button id="add-mango">Add To Shopping Cart</button></li>
+                        <li id="pineapple">Pineapple🍍<button id="add-pineapple">Add To Shopping Cart</button></li>
+                        <li id="kiwi">Kiwi🥝<button id="add-kiwi">Add To Shopping Cart</button></li>
+                        <li id="watermelon">Watermelon🍉<button id="add-watermelon">Add To Shopping Cart</button></li>
+                        <li id="peach">Peach🍑<button id="add-peach">Add To Shopping Cart</button></li>
+                        <li id="strawberries">Stawberries🍓<button id="add-strawberries">Add To Shopping Cart</button></li>
+                        <li id="apple">Apple🍏<button id="add-apple">Add To Shopping Cart</button></li>
+                    </ul>
+                    <h3>Shopping Cart 🛒 :</h1>
+                    <ul id="shopping-cart"></ul>
+                </section>
+            </section>
+        </section>
+        
+        <section class="root-cell">
+            <h1>Iteration & Iterative Development</h1>
+            <!--
+                    <p>In software development, we start with the smallest, simplest thing we can build that works. Then we incrementally
+                        improve it. This is iteration.</p>
+                    -->
+            <section id="user-stories-iteration">
+                <section class="user-stories-cell user-stories-iteration-heading">Iteration</section>
+                <section class="user-stories-cell user-stories-iteration-column-heading-who">As a [who]</section>
+                <section class="user-stories-cell user-stories-iteration-column-heading-what">I can [what]</section>
+                <section class="user-stories-cell user-stories-iteration-column-heading-why">so that [why]</section>
+                <section class="user-stories-cell user-stories-highlight">who</section>
+                <section class="user-stories-cell user-stories-highlight">what</section>
+                <section class="user-stories-cell user-stories-highlight">why</section>
+                <section class="user-stories-cell user-stories-highlight">who</section>
+                <section class="user-stories-cell user-stories-highlight">what</section>
+                <section class="user-stories-cell user-stories-highlight">why</section>
+                <section class="user-stories-cell user-stories-highlight">who</section>
+                <section class="user-stories-cell user-stories-highlight">what</section>
+                <section class="user-stories-cell user-stories-highlight">why</section>
+            </section>
+        </section>
+        
+        <section class="root-cell">
+            <h1>Ship It</h1>
+            <section>
+                <h2>Working Iteration on Deployed Site:</h1>
+                    <section class="deployment">
+                        <p>text</p>
+                    </section>
+            </section>
+        </section>
+        
+        <section class="root-cell">
+            <p>.</p>
+        </section>
+
+
+        <section class="root-cell">
+            <h1 class="project-title">Project: 03. Image carousel</h1>
+            <h2>Requirement:</h2>
+            <p>Allow the user to cycle through a set of images</p>
+        </section>
+        
+        <section class="root-cell">
+            <h1>Minimum Viable Product & User Stories</h1>
+            <!--
+            <p>As always with software development, we start with the simplest thing possible. Let's define the MVP.</p>
+            <p>What's the minimum set of user stories we could implement for this product to be useful?</p>
+            <p>Another way to say this is: "What is the minimum viable product?</p>
+            <p>A user story is a short sentence stating some goal a user can expect to achieve when using the product we are implementing.</p>
+            -->
+            <section id="user-stories-mvp">
+                <section class="user-stories-cell user-stories-mvp-heading">Minimum Viable Product</section>
+                <section class="user-stories-cell user-stories-mvp-column-heading-who">As a [who]</section>
+                <section class="user-stories-cell user-stories-mvp-column-heading-what">I can [what]</section>
+                <section class="user-stories-cell user-stories-mvp-column-heading-why">so that [why]</section>
+                <section class="user-stories-cell user-stories-highlight">As a user</section>
+                <section class="user-stories-cell user-stories-highlight">I can see a single image, and two buttons, which i can click on, one which cycles forward and one which cycles backward through a set of images</section>
+                <section class="user-stories-cell user-stories-highlight">so that I can see multiple images in one location, through user interaction, for example product images</section>
+            </section>
+            <section>
+                <h2>Working MVP on Blocks:</h2>
+                <a href="https://blocks.codeyourfuture.io/share.html?v=('j!('blocks!('languageVersion!0~blocks!%5B('type!'on_start'~id!'Ji%2C)%7Cb%2C'3G7%2B7%3B(L2ze%7D.'~x!17~y!16%C2%8BTEXT1!'at%20the%20start%20%7Bwhen%20run%20is%20clicked%7D')%C2%96HANDLER%7F%C2%92'%3A6%60XGiv6.4%7DHXn%7Cknab%3F%C2%80%C2%96VALUE%7Flists_create_with'~id!'%60tT5DwI%25DJEx_%7BQ(jbSY'~extraState!('itemCount!12)%C2%96ADD0%C2%87CTrep%25a%2F%5Ed%24JSzPJ%3DEJv%26%22book001%C2%881%C2%87%7B%2C3%7BvqPnyY-ci2OIEH)a%26%22book002%C2%882%C2%87xBgYA%2FR.MKHJuyM%3Axzj)%26%22book003%C2%883%C2%87%3DCwa%3D%3F%3DHQIA%237Ek*)Xri%26%22book004%C2%884%C2%87d%7DhK)86%2C2UP%3A9s%3AjZprY%26%22book005%C2%885%C2%87u%5Bq1gg%23%60yJhxwA5iU%24%5E%3D%26%22book006%C2%886%C2%877%25ONG-q(g%23(%7B)UzcLY%24I%26%22book007%C2%887%C2%87%7B%2C'%2C*%23zu%2F%3Fe%3D.Mu%3F%7C)XR6%26%22book008%C2%888%C2%87NUw%5EP2TG%3AxM%7B8bB%2C'%608nQ%26%22book009%C2%889%C2%87m%5E%2FT76%246_V%7Bh4-'%3AxsORY%26%22book010%C2%8810%C2%87yqLAa8o%25TbQ2k%2FvdvRi%3A%26%22book011%C2%8811%C2%87A1JNws3'%3A%3A%2C'O%5B5%3F*%7Cads%24%26%22book012.png')))))))~next%C2%83wRpu4rO%3AT-6*AyBdVG%3B%23%C2%93%C2%86'ZEbH1_6j3U3(Q3n%2BicT%3B'~x!19~y!596%C2%84%C2%85ME!'displayImage%C2%8Ewith_element_by_id'~id!'g%2CWeaB%7CSzg%23%2C'K-'%3AK%2BOg-'%C2%8BID!'carousel-image%C2%8Eset_attribute'~id!'pRZ%2C'A%2B%7DpvIOuspIUHhbM'%C2%8BPROPERTY!'src')%C2%8Aid!'MM4AhC%7Cm7IJI%7CZEnM%2C'%2FT'%C2%8BMODE!'GET'~WHERE!'FIRST%C2%82id!'skVW*n%25PrTV%3ABKlQgOAI%C2%80))))))%C2%86'4a9Wt%5DW%2CL1zYV%7B1ecC%5En'~x!18~y!718%C2%84%C2%85ME!'cycleForward%C2%8E%C2%92%5BbpvZAC'%3ALH%23y4%24u2*%2F%3F%7D%C2%81%C2%8Aid!'EkNzFeTm%24iM%40jb%247S4Fq%C2%94FIRST%C2%82id!'%60gtQg21Yz%3BC%2B%7DC%5E%60%24c6c%C2%80%C2%95U5ZdYlH3CusDhs9Worab'%C2%8BWHERE!'END%C2%82id!'b%24G.D9k%25K30k%3F2%7C2-3h%60%C2%81))~LIST%C2%97id!'%23Au%40V2vUjCA5%3DByhgNGR%C2%80))%C2%86!s%3DCxyouz%2FwkR%7DTfWV%7BU'~x!18~y!851%C2%84%C2%85ME!'cycleBackwards%C2%8E%C2%92C'%3A%3B)cRL%2FCQXS%7B%40K1YU99%C2%81%C2%8Aid!'%40%3DqOa%409D4AhZBF6gpW%23%3A%C2%94LAST%C2%82id!'ypnL%3D4kx%40h9Ai3T_Y0D%7C%C2%80%C2%95lgJTNdVt9%3A%5BC%7C%7BJoC2im'%C2%8BWHERE!'START%C2%82id!'%5DX.B%3A3EWV%25%3B%2F%3ARCOV2Cv%C2%81))~LIST%C2%97id!'xne9%3FZ%5Ez%3D%40cE%2C'%2C'%24d%5B%5B1w%C2%80))%C2%8FN_4%2C'%2C'%3B.hzfsCEo*UHe5Y'~x!18~y!495%C2%8Cback%C2%8D%C2%83u%600mo%24AQiJD-%2C'5_%2C'%5EF%7Dm%C2%89cycleBackwards')~next%C2%83J2'%3A%5Dj%23jQec%3AWT%2FE0H)nS%C2%93%C2%8FucOrd9_zbb3%60d2*.qGk8'~x!15~y!400%C2%8Cfor%C2%8D%C2%83egdSWFNqm%3D_%3A%23M%2BE%25-A%3A%C2%89cycleForward')~next%C2%83%2B)JzK(P%2C'Hc%5Dw%3DA%2C%3A1z0%2F%C2%93)))))))%5D)~variables!%5B('name!'x'~id!'%40h3b7FK%40vFg%2F)AjGjSUt')%C2%99parameter'~id!'RxiF%5DFfz%60G%5EN%7D%3AYx.%7D5%5D')%C2%99imagesArray'~%C2%91%C2%99array'~id!'2P(RY)ec%7B-%3D%5BCIbtl%2F%2C'b')%C2%99temporary'~%C2%90%5D)~h!'%3Cimg%20id%3D%5C'carousel-image%5C'%20src%3D%5C'%5C'%3E%5Cn%3Cbr%C2%98backward-button%5C'%3EBackward%3C%2Fbutton%C2%98forward-button%5C'%3EForward%3C%2Fbutton%3E')%22t.com%2Fbazmurphy%2Fcyf-blocks%2Fmain%2Fimages%2Fstorybook%2F%26'%C2%8BTEXT!'https%3A%2F%2Fraw.githubuserconten%7F!('block!('type!'%C2%80'%C2%8BVAR!('%C2%91)%C2%81'%C2%8BVAR!('%C2%90)%C2%82')%C2%96VALUE%C2%97%C2%83%7Fprocedures_callnoreturn'~id!'%C2%84~icons!('comment!('text!'Describe%20this%20function..%C2%85.'~pinned!false~height!80~width!160))%C2%8BNA%C2%86)))))))%2C('type!'procedures_defnoreturn'~id!%C2%87%7Ftext'~id!'%C2%88.png')))~ADD%C2%89'~extraState!('name!'%C2%8A%C2%96VALUE%7Farrays_getFirst'~%C2%8B~fields!('%C2%8C%C2%8BTEXT1!'when%20the%20element%20with%20id'~ID!'%C2%8Dward-button'~TEXT2!'is%20clicked')%C2%96HANDLER%C2%8E')%C2%96STACK%7F%C2%8F)))))))%2C('type!'element_clicked'~id!'%C2%90id!'qU%24rQ38fGX%3D4%7C%23L%2Cnr%7DN')%C2%91id!'A%5DGjEaHI%2Ci%2C'%23%2C'pqhNkY3')%C2%92variables_set'~id!'%C2%93%C2%89displayImage'%C2%94'%C2%8BMODE!'GET_REMOVE'~WHERE!'%C2%95))))))~next%7Farrays_push'~id!'%C2%96~inputs!('%C2%97%7Fvariables_get'~%C2%98%3E%5Cn%3Cbutton%20id%3D%5C'%C2%99%2C('name!'%01%C2%99%C2%98%C2%97%C2%96%C2%95%C2%94%C2%93%C2%92%C2%91%C2%90%C2%8F%C2%8E%C2%8D%C2%8C%C2%8B%C2%8A%C2%89%C2%88%C2%87%C2%86%C2%85%C2%84%C2%83%C2%82%C2%81%C2%80%7F%26%22_"
+                    target="_blank" class="share-link">Share Link</a>
+                <img src="images/03-carousel/03-carousel-blocks-001.png" alt="" class="blocks-screenshot">
+            </section>
+            <section>
+                <h2>Working MVP on Deployed Site:</h2>
+                <section class="deployment">
+                    <img id="carousel-image" src="">
+                    <br>
+                    <button id="backward-button">Backward</button>
+                    <button id="forward-button">Forward</button>
+                </section>
+            </section>
+        </section>
+        
+        <section class="root-cell">
+            <h1>Iteration & Iterative Development</h1>
+            <!--
+            <p>In software development, we start with the smallest, simplest thing we can build that works. Then we incrementally
+                improve it. This is iteration.</p>
+            -->
+            <section id="user-stories-iteration">
+                <section class="user-stories-cell user-stories-iteration-heading">Iteration</section>
+                <section class="user-stories-cell user-stories-iteration-column-heading-who">As a [who]</section>
+                <section class="user-stories-cell user-stories-iteration-column-heading-what">I can [what]</section>
+                <section class="user-stories-cell user-stories-iteration-column-heading-why">so that [why]</section>
+                <section class="user-stories-cell user-stories-highlight">who</section>
+                <section class="user-stories-cell user-stories-highlight">what</section>
+                <section class="user-stories-cell user-stories-highlight">why</section>
+                <section class="user-stories-cell user-stories-highlight">who</section>
+                <section class="user-stories-cell user-stories-highlight">what</section>
+                <section class="user-stories-cell user-stories-highlight">why</section>
+                <section class="user-stories-cell user-stories-highlight">who</section>
+                <section class="user-stories-cell user-stories-highlight">what</section>
+                <section class="user-stories-cell user-stories-highlight">why</section>
+            </section>
+        </section>
+        
+        <section class="root-cell">
+            <h1>Ship It</h1>
+            <section>
+                <h2>Working Iteration on Deployed Site:</h1>
+                    <section class="deployment">
+                        <p>text</p>
+                    </section>
+            </section>
+        </section>
+        
+        <section class="root-cell">
+            <p>.</p>
         </section>
 
     </section>
