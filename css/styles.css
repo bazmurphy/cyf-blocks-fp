@@ -220,6 +220,7 @@ p {
 #products-list {
 
 }
+
 #products-list li {
     padding: 0.25rem;
 }
@@ -237,4 +238,45 @@ p {
 
 .project-title {
     font-weight: 800;
+}
+
+
+#carousel-image {
+    border: 0.1rem solid black;
+    border-radius: 0.25rem;
+}
+
+#backward-button, #forward-button {
+    padding: 0.5rem 1rem;
+}
+
+
+#navigation {
+    width: 10rem;
+    height: 2rem;
+    border: 0.1rem solid darkgray;
+    border-radius: 0.25rem;
+    margin: 0;
+    padding: 0;
+}
+
+#list-of-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+#list-of-links li {
+    width: 10rem;
+    text-align: center;
+    border: 0.1rem solid darkgray;
+    border-radius: 0.25rem;
+    background: rgb(220, 230, 240);
+    padding: 0.5rem 0;
+}
+
+#list-of-links li a {
+    color: inherit;
+    text-decoration: none;
 }

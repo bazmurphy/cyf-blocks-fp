@@ -1,3 +1,4 @@
+// COMMENTS
 function getNumberOrString(value) {
     // Convert a string value to a number if possible
     let number_value = Number(value);
@@ -15,6 +16,8 @@ document.getElementById('add-comment').addEventListener('click', (event) => {
     element_comments_list.appendChild(new_li);
 });
 
+
+// SHOPPING CART LIGHT
 var parameter;
 
 // Describe this function...
@@ -69,6 +72,7 @@ document.getElementById('add-apple').addEventListener('click', (event) => {
 });
 
 
+// IMAGE CAROUSEL
 var imagesArray, temporary;
 
 // Describe this function...
@@ -106,5 +110,61 @@ document.getElementById('forward-button').addEventListener('click', (event) => {
 document.getElementById('backward-button').addEventListener('click', (event) => {
     cycleBackwards();
     displayImage();
+
+});
+
+
+// HAMBURGER MENU
+var links, sources, navigationShowingFlag, link;
+
+
+links = ['Link to Section 1', 'Link to Section 2', 'Link to Section 3'];
+sources = ['#section-one', '#section-two', '#section-three'];
+let element_navigation = document.getElementById('navigation');
+element_navigation.style.backgroundColor = '#33cc00';
+let element_list_of_links = document.getElementById('list-of-links');
+links.forEach((link) => {
+    element_list_of_links.setAttribute("class", 'link-class');
+    let new_li = document.createElement('li');
+    let new_a = document.createElement('a');
+    new_a.innerText = link;
+    new_a.setAttribute("href", sources.shift());
+
+    new_li.appendChild(new_a);
+
+    element_list_of_links.appendChild(new_li);
+});
+element_list_of_links.style.visibility = (false) ? 'visible' : 'hidden';
+document.querySelectorAll('.link-class').forEach((selectedElement) => {
+
+    selectedElement.addEventListener('click', (event) => {
+        let element_navigation2 = document.getElementById('navigation');
+        element_navigation2.innerText = '☰';
+        element_navigation2.style.backgroundColor = '#33cc00';
+        let element_list_of_links2 = document.getElementById('list-of-links');
+        element_list_of_links2.style.visibility = (false) ? 'visible' : 'hidden';
+        navigationShowingFlag = false;
+
+    });
+});
+navigationShowingFlag = false;
+
+
+document.getElementById('navigation').addEventListener('click', (event) => {
+    if (navigationShowingFlag == false) {
+        let element_navigation3 = document.getElementById('navigation');
+        element_navigation3.innerText = 'X';
+        element_navigation3.style.backgroundColor = '#cc0000';
+        let element_list_of_links3 = document.getElementById('list-of-links');
+        element_list_of_links3.style.visibility = (true) ? 'visible' : 'hidden';
+        navigationShowingFlag = true;
+    } else {
+        let element_navigation4 = document.getElementById('navigation');
+        element_navigation4.innerText = '☰';
+        element_navigation4.style.backgroundColor = '#33cc00';
+        let element_list_of_links4 = document.getElementById('list-of-links');
+        element_list_of_links4.style.visibility = (false) ? 'visible' : 'hidden';
+        navigationShowingFlag = false;
+    }
 
 });
