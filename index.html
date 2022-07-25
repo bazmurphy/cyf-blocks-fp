@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>CYF Blocks Final Project</title>
+</head>
+<body>
+    <section id="root-container">
+
+        <section class="root-cell">
+            <h1>Requirement:</h1>
+            <p>Pick one or more of the following projects, define its requirements by writing the user stories, iteratively develop it
+            in CYF Blocks, and ship it!</p>
+            <ol>
+                <li><span class="project-name">Commenting</span>: Make it possible for a user to add a comment on your website</li>
+                <li><span class="project-name">Shopping Cart Light</span>: Make it possible to add products to a "shopping cart"</li>
+                <li><span class="project-name">Image carousel</span>: Allow the user to cycle through a set of images</li>
+                <li><span class="project-name">Hamburger menu</span>: Display a dropdown menu</li>
+            </ol>
+        </section>
+
+        <section class="root-cell">
+            <h1>Project: 01. Commenting</h1>
+            <h2>Requirement:</h2>
+            <p>Make it possible for a user to add a comment on your website (the comment won't get saved anywhere, so it will disappear
+            when the page is refreshed - we'll work on saving later on)</p>
+        </section>
+
+        <section class="root-cell">
+            <h1>Minimum Viable Product & User Stories</h1>
+            <!--
+            <p>As always with software development, we start with the simplest thing possible. Let's define the MVP.</p>
+            <p>What's the minimum set of user stories we could implement for this product to be useful?</p>
+            <p>Another way to say this is: "What is the minimum viable product?</p>
+            <p>A user story is a short sentence stating some goal a user can expect to achieve when using the product we are implementing.</p>
+            -->
+            <section id="user-stories-mvp">
+                <section class="user-stories-cell user-stories-mvp-heading">Minimum Viable Product</section>
+                <section class="user-stories-cell user-stories-mvp-column-heading-who">As a [who]</section>
+                <section class="user-stories-cell user-stories-mvp-column-heading-what">I can [what]</section>
+                <section class="user-stories-cell user-stories-mvp-column-heading-why">so that [why]</section>
+                <section class="user-stories-cell">As a user</section>
+                <section class="user-stories-cell">I can write a comment in an input text box and click a button and it will add my comment to a list of comments on the website</section>
+                <section class="user-stories-cell">so that i can post comments on the website</section>
+            </section>
+            <section>
+                <h1>Working MVP on Blocks:</h1>
+                <a href="https://blocks.codeyourfuture.io/share.html?v=('j!('blocks!('languageVersion!0~blocks!%5B%7F%7C_clicked%260.%24%5D%3Bx(WTR%24P%60s%3BZh85V'~x!23~y!-529TEXT1!'when%20the%20%7C%20with%20id'~ID!'add-c*'~TEXT2!'is%20clicked')~Os!('HANDLER!('7with_%7C_by_id%26bfuR%2B8r4FNy%7B%2Fln-NWkU'9ID!'c*s-list%5Eadd_%7C%26H%23E%3D%3B(J4%3BH%5Bz-%24tgYI6%3D'9ELEMENT!'li%5Eset_content%26X%25%2FQXoGBi%2Fd(%3Ai%23%5BSX%60('~Os!('VALUE!('shadow!%7Ftext%26B)oKEUyolqQ_%7D_%60%3FGfjs'9TEXT!''))~7get_O_value_with_id%26%3Fy%3D_%60%3F%2C'%60%23)FHYygQP%7DS8'9ID!'O-c*'))))))))))))))%5D))~h!'%3CO%22O-c*%5C'%20type%3D%5C'text%5C'%20placeholder%3D%5C'Your%20c*%5C'%20%2F%40button%22add-c*%5C'%3EAdd%20C*%3C%2Fbutton%40h1%3EC*s%3A%3C%2Fh1%40ul%22c*s-list%5C'%3E%3C%2Ful%3E')*omment7block!%7F9~fields!('Oinput%22%20id%3D%5C'%26'~id!'%40%3E%5Cn%3C%5E')~Os!('STACK!('7%7Celement%7F('type!'%01%7F%7C%5E%40%26%22O97*_" target="_blank" class="share-link">Share Link</a>
+                <img src="images/01-comments/01-comments-blocks-001.png" alt="" class="blocks-screenshot">
+            </section>
+            <section>
+                <h1>Working MVP on Deployed Site:</h1>
+                <section class="deployment">
+                    <input id="input-comment" type="text" placeholder="Your comment" />
+                    <button id="add-comment">Add Comment</button>
+                    <h1 id="comments-title">Comments:</h1>
+                    <ul id="comments-list"></ul>
+                </section>
+            </section>
+        </section>
+
+        <section class="root-cell">
+            <h1>Iteration & Iterative Development</h1>
+            <!--
+            <p>In software development, we start with the smallest, simplest thing we can build that works. Then we incrementally
+                improve it. This is iteration.</p>
+            -->
+            <section id="user-stories-iteration">
+                <section class="user-stories-cell user-stories-iteration-heading">Iteration</section>
+                <section class="user-stories-cell user-stories-iteration-column-heading-who">As a [who]</section>
+                <section class="user-stories-cell user-stories-iteration-column-heading-what">I can [what]</section>
+                <section class="user-stories-cell user-stories-iteration-column-heading-why">so that [why]</section>
+                <section class="user-stories-cell">who</section>
+                <section class="user-stories-cell">what</section>
+                <section class="user-stories-cell">why</section>
+                <section class="user-stories-cell">who</section>
+                <section class="user-stories-cell">what</section>
+                <section class="user-stories-cell">why</section>
+                <section class="user-stories-cell">who</section>
+                <section class="user-stories-cell">what</section>
+                <section class="user-stories-cell">why</section>
+            </section>
+        </section>
+
+        <section class="root-cell">
+            <h1>Ship It</h1>
+        </section>
+
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
