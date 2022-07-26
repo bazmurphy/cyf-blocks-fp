@@ -65,6 +65,56 @@ p {
     padding: 0.2rem;
 }
 
+
+#baz {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "image title"
+        "image nav";
+    align-items: center;
+}
+
+#baz-image-link {
+    margin: 0;
+    display: block;
+    grid-area: image;
+}
+
+#baz-image {
+    margin: 0;
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+}
+
+#baz-title-h1 {
+    grid-area: title;
+    border: none;
+    background: none;
+}
+
+#baz-title-h1 a {
+    color: #010225d5;
+    text-decoration: none;
+}
+
+#baz-nav {
+    grid-area: nav;
+}
+
+#baz-nav>a {
+    display: inline-block;
+    color: #010225d5;
+    text-decoration: none;
+    border: 0.1rem solid #caf0f8;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
 #user-stories-mvp,
 #user-stories-iteration {
     margin: 1rem 0;
@@ -142,6 +192,18 @@ p {
     font-style: italic;
 }
 
+.share-link {
+    display: inline-block;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    color: black;
+    text-decoration: none;
+    background: hsla(190, 77%, 88%, 0.8);
+    /* border: 0.5rem solid hsla(201, 100%, 36%, 0.5); */
+    border: 0.2rem solid hsla(279, 58%, 47%, 1);
+    border-radius: 0.25rem;
+}
+
 .blocks-screenshot {
     width: 100%;
     margin-bottom: 1rem;
@@ -173,85 +235,25 @@ p {
     border-radius: 0.25rem;
 }
 
-.share-link {
-    display: inline-block;
-    margin: 0.5rem 0;
-    padding: 0.5rem 1rem;
-    color: black;
-    text-decoration: none;
-    background: hsla(190, 77%, 88%, 0.8);
-    /* border: 0.5rem solid hsla(201, 100%, 36%, 0.5); */
-    border: 0.2rem solid hsla(279, 58%, 47%, 1);
-    border-radius: 0.25rem;
-}
-
 #comments-title {
     margin-top: 0.5rem;
 }
 
-#baz {
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 8fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "image title"
-                        "image nav";
-    align-items: center;
-}
-
-#baz-image-link {
-    margin: 0;
-    display: block;
-    grid-area: image;
-}
-
-#baz-image {
-    margin: 0;
-    display: block;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 1rem;
-}
-
-#baz-title-h1 {
-    grid-area: title;
-    border: none;
-    background: none;
-}
-
-#baz-title-h1 a {
-    color: #010225d5;
-    text-decoration: none;
-}
-
-#baz-nav {
-    grid-area: nav;
-}
-
-#baz-nav > a {
-    display: inline-block;
-    color: #010225d5;
-    text-decoration: none;
-    border: 0.1rem solid #caf0f8;
-    border-radius: 0.25rem;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-}
-
-
-
-#products-list {
-
-}
-
-#products-list li {
+#products-list li, 
+#products-list2 li {
     padding: 0.25rem;
 }
 
-#products-list button {
+#products-list button, 
+#products-list2 button,
+#empty-shopping-cart2 {
     border: 1px solid black;
     border-radius: 0.25rem;
     padding: 0.25rem 0.5rem;
+}
+
+#empty-shopping-cart2 {
+    margin-bottom: 1rem;    
 }
 
 .user-stories-highlight {
@@ -307,4 +309,9 @@ p {
 
 .end-of-project {
     margin-bottom: 4rem;
+}
+
+#error2 {
+    padding-top: 1rem;
+    color: red;
 }
