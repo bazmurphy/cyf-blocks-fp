@@ -189,28 +189,56 @@ p {
     margin-top: 0.5rem;
 }
 
-.avatar {
+#baz {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "image title"
+                        "image nav";
+    align-items: center;
+}
+
+#baz-image-link {
+    margin: 0;
+    display: block;
+    grid-area: image;
+}
+
+#baz-image {
+    margin: 0;
+    display: block;
     width: 5rem;
     height: 5rem;
     border-radius: 1rem;
 }
 
-#baz {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
-#baz a {
-    display: inline-block;
-    text-decoration: none;
-    color:#010225d5;
-}
-
-#baz h1 {
+#baz-title-h1 {
+    grid-area: title;
     border: none;
     background: none;
 }
+
+#baz-title-h1 a {
+    color: #010225d5;
+    text-decoration: none;
+}
+
+#baz-nav {
+    grid-area: nav;
+}
+
+#baz-nav > a {
+    display: inline-block;
+    color: #010225d5;
+    text-decoration: none;
+    border: 0.1rem solid #caf0f8;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+
 
 #products-list {
 
