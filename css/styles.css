@@ -267,7 +267,9 @@ p {
 }
 
 
-#carousel-image {
+#carousel-image,
+#carousel-image2 {
+    display: block;
     border: 0.1rem solid black;
     border-radius: 0.25rem;
 }
