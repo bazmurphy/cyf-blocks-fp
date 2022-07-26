@@ -1,4 +1,4 @@
-// COMMENTS
+// COMMENTS MVP
 function getNumberOrString(value) {
     // Convert a string value to a number if possible
     let number_value = Number(value);
@@ -17,7 +17,39 @@ document.getElementById('add-comment').addEventListener('click', (event) => {
 });
 
 
-// SHOPPING CART LIGHT
+// COMMENTS ITERATION 01
+function getNumberOrString(value) {
+    // Convert a string value to a number if possible
+    let number_value = Number(value);
+    if (Number.isNaN(number_value)) {
+        return value
+    } else {
+        return number_value
+    }
+}
+
+document.getElementById('add-comment2').addEventListener('click', (event) => {
+    let element_comments_list = document.getElementById('comments-list2');
+    let new_li = document.createElement('li');
+    let new_span = document.createElement('span');
+    new_span.innerText = getNumberOrString(document.getElementById('input-commenter-name2').value);
+
+    new_li.appendChild(new_span);
+    let new_span2 = document.createElement('span');
+    new_span2.innerText = '  : ';
+
+    new_li.appendChild(new_span2);
+    let new_span3 = document.createElement('span');
+    new_span3.innerText = getNumberOrString(document.getElementById('input-comment2').value);
+
+    new_li.appendChild(new_span3);
+
+    element_comments_list.appendChild(new_li);
+
+});
+
+
+// SHOPPING CART LIGHT MVP
 var parameter;
 
 // Describe this function...
@@ -29,7 +61,6 @@ function addProductToShoppingCart(parameter) {
 
     element_shopping_cart.appendChild(new_li);
 }
-
 
 document.getElementById('add-banana').addEventListener('click', (event) => {
     addProductToShoppingCart('Banana🍌');
@@ -72,7 +103,7 @@ document.getElementById('add-apple').addEventListener('click', (event) => {
 });
 
 
-// IMAGE CAROUSEL
+// IMAGE CAROUSEL MVP
 var imagesArray, temporary;
 
 // Describe this function...
@@ -96,10 +127,8 @@ function cycleBackwards() {
     imagesArray.unshift(temporary);
 }
 
-
 imagesArray = ['https://raw.githubusercontent.com/bazmurphy/cyf-blocks/main/images/storybook/book001.png', 'https://raw.githubusercontent.com/bazmurphy/cyf-blocks/main/images/storybook/book002.png', 'https://raw.githubusercontent.com/bazmurphy/cyf-blocks/main/images/storybook/book003.png', 'https://raw.githubusercontent.com/bazmurphy/cyf-blocks/main/images/storybook/book004.png', 'https://raw.githubusercontent.com/bazmurphy/cyf-blocks/main/images/storybook/book005.png', 'https://raw.githubusercontent.com/bazmurphy/cyf-blocks/main/images/storybook/book006.png', 'https://raw.githubusercontent.com/bazmurphy/cyf-blocks/main/images/storybook/book007.png', 'https://raw.githubusercontent.com/bazmurphy/cyf-blocks/main/images/storybook/book008.png', 'https://raw.githubusercontent.com/bazmurphy/cyf-blocks/main/images/storybook/book009.png', 'https://raw.githubusercontent.com/bazmurphy/cyf-blocks/main/images/storybook/book010.png', 'https://raw.githubusercontent.com/bazmurphy/cyf-blocks/main/images/storybook/book011.png', 'https://raw.githubusercontent.com/bazmurphy/cyf-blocks/main/images/storybook/book012.png'];
 displayImage();
-
 
 document.getElementById('forward-button').addEventListener('click', (event) => {
     cycleForward();
@@ -114,9 +143,8 @@ document.getElementById('backward-button').addEventListener('click', (event) => 
 });
 
 
-// HAMBURGER MENU
+// HAMBURGER MENU MVP
 var links, sources, navigationShowingFlag, link;
-
 
 links = ['Link to Section 1', 'Link to Section 2', 'Link to Section 3'];
 sources = ['#section-one', '#section-two', '#section-three'];
@@ -148,7 +176,6 @@ document.querySelectorAll('.link-class').forEach((selectedElement) => {
     });
 });
 navigationShowingFlag = false;
-
 
 document.getElementById('navigation').addEventListener('click', (event) => {
     if (navigationShowingFlag == false) {

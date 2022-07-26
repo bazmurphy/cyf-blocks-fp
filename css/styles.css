@@ -154,22 +154,21 @@ p {
     border-radius: 0.25rem;
 }
 
-.deployment h1, .deployment h2, .deployment h3 {
+.deployment h1, 
+.deployment h2, 
+.deployment h3 {
     margin: none;
     padding: none;
     background: none;
     border: none;
 }
 
-
-#input-comment {
+#input-comment,
+#add-comment, 
+#input-comment2,
+#add-comment2, 
+#input-commenter-name2 {
     padding: 0.5rem;
-    border: 0.1rem solid black;
-    border-radius: 0.25rem;
-}
-
-#add-comment {
-    padding: 0.5rem 1rem;
     border: 0.1rem solid black;
     border-radius: 0.25rem;
 }
