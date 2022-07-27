@@ -319,7 +319,7 @@ p {
 }
 
 #hamburger {
-    border: 1px solid black;
+    border: 0.1rem solid black;
     background: coral;
     font-size: 3rem;
     height: 70px;
@@ -327,14 +327,14 @@ p {
 
 .box-level-one {
     display: block;
-    border: 1px solid blue;
-    background: lightblue;
+    border: 0.1rem solid black;
+    background: skyblue;
     padding: 1rem;
 }
 
 .box-level-two {
     display: block;
-    border: 1px solid red;
-    background: pink;
+    border: 0.1rem solid black;
+    background: powderblue;
     padding: 1rem;
 }
