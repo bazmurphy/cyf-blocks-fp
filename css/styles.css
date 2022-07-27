@@ -317,3 +317,24 @@ p {
     padding-top: 1rem;
     color: red;
 }
+
+#hamburger {
+    border: 1px solid black;
+    background: coral;
+    font-size: 3rem;
+    height: 70px;
+}
+
+.box-level-one {
+    display: block;
+    border: 1px solid blue;
+    background: lightblue;
+    padding: 1rem;
+}
+
+.box-level-two {
+    display: block;
+    border: 1px solid red;
+    background: pink;
+    padding: 1rem;
+}
