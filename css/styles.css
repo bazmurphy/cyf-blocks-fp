@@ -338,3 +338,19 @@ p {
     background: powderblue;
     padding: 1rem;
 }
+
+#section-one-zero, #section-two-zero, #section-three-zero {
+padding: 2rem 0 1rem 0;
+}
+
+#section-one-one, 
+#section-one-two, 
+#section-one-three, 
+#section-two-one, 
+#section-two-two, 
+#section-two-three, 
+#section-three-one,
+#section-three-two,
+#section-three-three {
+padding: 0.5rem 0;
+}

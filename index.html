@@ -18,10 +18,10 @@
             <a id="baz-image-link" href="https://github.com/bazmurphy/cyf-blocks-fp" target="_blank"><img id="baz-image" src="images/bazavatar.jpeg" alt=""></a>
             <h1 id="baz-title-h1"><a href="https://github.com/bazmurphy/cyf-blocks-fp" target="_blank">Baz</a> : CYF Fundamentals Coursework : CYF Blocks Final Project</h1>
             <nav id="baz-nav">
-                <a href="#project-one">1 : Commenting</a>
-                <a href="#project-two">2 : Shopping Cart Light</a>
-                <a href="#project-three">3 : Image Carousel</a>
-                <a href="#project-four">4 : Hamurger Menu</a>
+                <a href="#project-one">💬 Commenting</a>
+                <a href="#project-two"> 🛒 Shopping Cart Light</a>
+                <a href="#project-three">🖼️ Image Carousel</a>
+                <a href="#project-four">🍔 Hamurger Menu</a>
             </nav>
         </section>
 
@@ -40,8 +40,8 @@
         -->
 
         <section class="root-cell">
-            <h1 class="project-title" id="project-one">Project 1 : Commenting</h1>
-            <h2>Requirement:</h2>
+            <h1 class="project-title" id="project-one">Project 1 : 💬 Commenting</h1>
+            <h2>Defined Requirement:</h2>
             <p>Make it possible for a user to add a comment on your website (the comment won't get saved anywhere, so it will disappear
             when the page is refreshed - we'll work on saving later on)</p>
         </section>
@@ -122,8 +122,8 @@
         </section> -->
 
         <section class="root-cell">
-            <h1 class="project-title" id="project-two">Project 2 : Shopping Cart Light</h1>
-            <h2>Requirement:</h2>
+            <h1 class="project-title" id="project-two">Project 2 : 🛒 Shopping Cart Light</h1>
+            <h2>Defined Requirement:</h2>
             <p>Make it possible to add products to a "shopping cart" (again, we won't be able to check out/pay with what we know so
             far)</p>
         </section>
@@ -217,8 +217,8 @@
         </section> -->
         
         <section class="root-cell">
-            <h1 class="project-title" id="project-three">Project 3 : Image Carousel</h1>
-            <h2>Requirement:</h2>
+            <h1 class="project-title" id="project-three">Project 3 : 🖼️ Image Carousel</h1>
+            <h2>Defined Requirement:</h2>
             <p>Allow the user to cycle through a set of images</p>
         </section>
         
@@ -283,8 +283,8 @@
         </section> -->
 
         <section class="root-cell">
-            <h1 class="project-title" id="project-four">Project 4 : Hamburger Menu</h1>
-            <h2>Requirement:</h2>
+            <h1 class="project-title" id="project-four">Project 4 : 🍔 Hamburger Menu</h1>
+            <h2>Defined Requirement:</h2>
             <p>Display a dropdown menu</p>
         </section>
         
@@ -340,55 +340,59 @@
             </section>
             <section>
                 <h2>Working Iteration on Deployed Site:</h1>
-                    <section class="deployment">
-                        <div id="hamburger">🍔</div>
+                <p>This iteration makes use of a lot of different CSS ids and classes to target items in groups or individually</p>
+                <p>However there is a known bug, because of Event Capturing, and Event Propagation, with default "Bubbling" behaviour the flags (true/false) for the SubBoxes (the nested items) are updated more than once, as clicking the link (the innermost eventListener) triggers a the Bubbled chain of eventListeners, which means the flag is toggled multiple times.
+                <p>Therefore the bug is only possible to fix with the JavaScript event.stopPropagation() method, which i will not
+                    use, as i want to limit myself to Blocks exclusively.</p>
+                <section class="deployment">
+                    <div id="hamburger">🍔</div>
 
-                        <div id="box-name-one" class="box-level-one">⬇️ <a class="box-link" href="#section-one-zero">Link 1.0</a>
-                        </div>
+                    <div id="box-name-one" class="box-level-one">⬇️ <a class="box-link" href="#section-one-zero">Link 1.0</a>
+                    </div>
 
-                        <div id="box-name-one-one" class="box-level-two box-one-sub-box">➡ <a id="box-link-one-one" class="box-link"
-                                href="#section-one-one">Link 1.1</a></div>
-                        <div id="box-name-one-two" class="box-level-two box-one-sub-box">➡ <a id="box-link-one-two" class="box-link"
-                                href="#section-one-two">Link 1.2</a></div>
-                        <div id="box-name-one-three" class="box-level-two box-one-sub-box">➡ <a id="box-link-one-three" class="box-link"
-                                href="#section-one-three">Link 1.3</a></div>
+                    <div id="box-name-one-one" class="box-level-two box-one-sub-box">➡ <a id="box-link-one-one" class="box-link"
+                            href="#section-one-one">Link 1.1</a></div>
+                    <div id="box-name-one-two" class="box-level-two box-one-sub-box">➡ <a id="box-link-one-two" class="box-link"
+                            href="#section-one-two">Link 1.2</a></div>
+                    <div id="box-name-one-three" class="box-level-two box-one-sub-box">➡ <a id="box-link-one-three" class="box-link"
+                            href="#section-one-three">Link 1.3</a></div>
 
-                        <div id="box-name-two" class="box-level-one">⬇️ <a class="box-link" href="#section-two-zero">Link 2.0</a></div>
+                    <div id="box-name-two" class="box-level-one">⬇️ <a class="box-link" href="#section-two-zero">Link 2.0</a></div>
 
-                        <div id="box-name-two-one" class="box-level-two box-two-sub-box">➡ <a class="box-link" href="#section-two-one">Link
-                                2.1</a></div>
-                        <div id="box-name-two-two" class="box-level-two box-two-sub-box">➡ <a class="box-link" href="#section-two-two">Link
-                                2.2</a></div>
-                        <div id="box-name-two-three" class="box-level-two box-two-sub-box">➡ <a class="box-link" href="#section-two-three">Link
-                                2.3</a></div>
+                    <div id="box-name-two-one" class="box-level-two box-two-sub-box">➡ <a class="box-link" href="#section-two-one">Link
+                            2.1</a></div>
+                    <div id="box-name-two-two" class="box-level-two box-two-sub-box">➡ <a class="box-link" href="#section-two-two">Link
+                            2.2</a></div>
+                    <div id="box-name-two-three" class="box-level-two box-two-sub-box">➡ <a class="box-link" href="#section-two-three">Link
+                            2.3</a></div>
 
-                        <div id="box-name-three" class="box-level-one">⬇️ <a class="box-link" href="#section-three-zero">Link 3.0</a></div>
+                    <div id="box-name-three" class="box-level-one">⬇️ <a class="box-link" href="#section-three-zero">Link 3.0</a></div>
 
-                        <div id="box-name-three-one" class="box-level-two box-three-sub-box">➡ <a class="box-link"
-                                href="#section-three-one">Link 3.1</a></div>
-                        <div id="box-name-three-two" class="box-level-two box-three-sub-box">➡ <a class="box-link"
-                                href="#section-three-two">Link 3.2</a></div>
-                        <div id="box-name-three-three" class="box-level-two box-three-sub-box">➡ <a class="box-link"
-                                href="#section-three-three">Link 3.3</a></div>
+                    <div id="box-name-three-one" class="box-level-two box-three-sub-box">➡ <a class="box-link"
+                            href="#section-three-one">Link 3.1</a></div>
+                    <div id="box-name-three-two" class="box-level-two box-three-sub-box">➡ <a class="box-link"
+                            href="#section-three-two">Link 3.2</a></div>
+                    <div id="box-name-three-three" class="box-level-two box-three-sub-box">➡ <a class="box-link"
+                            href="#section-three-three">Link 3.3</a></div>
 
-                        <section id="section-one-zero">--Section 1.0</section>
+                    <section id="section-one-zero">--Section 1.0</section>
+                    
+                    <section id="section-one-one">----Section 1.1</section>
+                    <section id="section-one-two">----Section 1.2</section>
+                    <section id="section-one-three">----Section 1.3</section>
 
-                        <section id="section-one-one">----Section 1.1</section>
-                        <section id="section-one-two">----Section 1.2</section>
-                        <section id="section-one-three">----Section 1.3</section>
+                    <section id="section-two-zero">--Section 2.0</section>
 
-                        <section id="section-two-zero">--Section 2.0</section>
+                    <section id="section-two-one">----Section 2.1</section>
+                    <section id="section-two-two">----Section 2.2</section>
+                    <section id="section-two-three">----Section 2.3</section>
 
-                        <section id="section-two-one">----Section 2.1</section>
-                        <section id="section-two-two">----Section 2.2</section>
-                        <section id="section-two-three">----Section 2.3</section>
+                    <section id="section-three-zero">--Section 3.0</section>
 
-                        <section id="section-three-zero">--Section 3.0</section>
-
-                        <section id="section-three-one">----Section 3.1</section>
-                        <section id="section-three-two">----Section 3.2</section>
-                        <section id="section-three-three">----Section 3.3</section>
-                    </section>
+                    <section id="section-three-one">----Section 3.1</section>
+                    <section id="section-three-two">----Section 3.2</section>
+                    <section id="section-three-three">----Section 3.3</section>
+                </section>
             </section>
         </section>
         

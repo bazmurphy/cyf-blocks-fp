@@ -79,6 +79,7 @@ document.querySelectorAll('.box-link').forEach((selectedElement3) => {
 
     selectedElement3.addEventListener('click', (event) => {
         collapseBurger();
+        event.stopPropagation();
     });
 });
 
