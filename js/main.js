@@ -494,13 +494,13 @@ document.getElementById('box-name-three').addEventListener('click', (event) => {
 });
 
 
-// SCROLL TO THE TOP COPIED FROM:
+// SCROLL TO THE TOP FROM:
 // https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 
 //Get the button:
 scrollToTheTopButton = document.getElementById("scrollToTheTop");
 
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down 50px from the top of the document, show the button
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
