@@ -12,6 +12,7 @@
     <title>CYF Blocks Final Project</title>
 </head>
 <body>
+    <button onclick="topFunction()" id="scrollToTheTop" title="Go to top">^ back to Top</button>
     <section id="root-container">
 
         <section id="baz" class="root-cell">
@@ -25,20 +26,6 @@
             </nav>
         </section>
 
-        <!--
-        <section class="root-cell">
-            <h1>Requirements:</h1>
-            <p>Pick one or more of the following projects, define its requirements by writing the user stories, iteratively develop it
-            in CYF Blocks, and ship it!</p>
-            <ol>
-                <li><span class="project-name">Commenting</span>: Make it possible for a user to add a comment on your website</li>
-                <li><span class="project-name">Shopping Cart Light</span>: Make it possible to add products to a "shopping cart"</li>
-                <li><span class="project-name">Image carousel</span>: Allow the user to cycle through a set of images</li>
-                <li><span class="project-name">Hamburger menu</span>: Display a dropdown menu</li>
-            </ol>
-        </section>
-        -->
-
         <section class="root-cell">
             <h1 class="project-title" id="project-one">Project 1 : 💬 Commenting</h1>
             <h2>Defined Requirement:</h2>
@@ -48,12 +35,6 @@
 
         <section class="root-cell">
             <h1>Minimum Viable Product & User Stories</h1>
-            <!--
-            <p>As always with software development, we start with the simplest thing possible. Let's define the MVP.</p>
-            <p>What's the minimum set of user stories we could implement for this product to be useful?</p>
-            <p>Another way to say this is: "What is the minimum viable product?</p>
-            <p>A user story is a short sentence stating some goal a user can expect to achieve when using the product we are implementing.</p>
-            -->
             <section id="user-stories-mvp">
                 <section class="user-stories-cell user-stories-mvp-heading">Minimum Viable Product</section>
                 <section class="user-stories-cell user-stories-mvp-column-heading-who">As a [who]</section>
@@ -81,10 +62,6 @@
 
         <section class="root-cell end-of-project">
             <h1>Iterative Development & User Stories</h1>
-            <!--
-            <p>In software development, we start with the smallest, simplest thing we can build that works. Then we incrementally
-                improve it. This is iteration.</p>
-            -->
             <section id="user-stories-iteration">
                 <section class="user-stories-cell user-stories-iteration-heading">Iteration</section>
                 <section class="user-stories-cell user-stories-iteration-column-heading-who">As a [who]</section>
@@ -341,7 +318,7 @@
             <section>
                 <h2>Working Iteration on Deployed Site:</h1>
                 <p>This iteration makes use of a lot of different CSS ids and classes to target items in groups or individually</p>
-                <p>However there is a known bug, because of Event Capturing, and Event Propagation, with default "Bubbling" behaviour the flags (true/false) for the SubBoxes (the nested items) are updated more than once, as clicking the link (the innermost eventListener) triggers a the Bubbled chain of eventListeners, which means the flag is toggled multiple times.
+                <p>However there is a known bug, because of Event Capturing, and Event Propagation, with default "Bubbling" behaviour the flags (true/false) for the SubBoxes (the nested items) are updated more than once, as clicking the link (the innermost eventListener) triggers the Bubbling chain of eventListeners.
                 <p>Therefore the bug is only possible to fix with the JavaScript event.stopPropagation() method, which i will not
                     use, as i want to limit myself to Blocks exclusively.</p>
                 <section class="deployment">

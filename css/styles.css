@@ -274,8 +274,15 @@ p {
     border-radius: 0.25rem;
 }
 
-#backward-button, #forward-button {
+#backward-button, 
+#forward-button {
     padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+#backward-button2,
+#forward-button2 {
+    cursor: pointer;
 }
 
 
@@ -286,6 +293,7 @@ p {
     border-radius: 0.25rem;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 
 #list-of-links {
@@ -323,6 +331,7 @@ p {
     background: coral;
     font-size: 3rem;
     height: 70px;
+    cursor: pointer;
 }
 
 .box-level-one {
@@ -330,6 +339,7 @@ p {
     border: 0.1rem solid black;
     background: skyblue;
     padding: 1rem;
+    cursor: pointer;
 }
 
 .box-level-two {
@@ -337,10 +347,11 @@ p {
     border: 0.1rem solid black;
     background: powderblue;
     padding: 1rem;
+    cursor: pointer;
 }
 
 #section-one-zero, #section-two-zero, #section-three-zero {
-padding: 2rem 0 1rem 0;
+    padding: 2rem 0 1rem 0;
 }
 
 #section-one-one, 
@@ -352,5 +363,25 @@ padding: 2rem 0 1rem 0;
 #section-three-one,
 #section-three-two,
 #section-three-three {
-padding: 0.5rem 0;
+    padding: 0.5rem 0;
+}
+
+#scrollToTheTop {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    bottom: 2rem;
+    right: 1rem;
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 0.25rem;
+    background: hsla(190, 77%, 88%, 0.5);
+    border: 0.1rem solid #caf0f8;
+    border-radius: 0.25rem;
+    color: #010225d5;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1rem;
 }

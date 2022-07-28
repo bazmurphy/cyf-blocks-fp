@@ -492,3 +492,27 @@ document.getElementById('box-name-three').addEventListener('click', (event) => {
     }
 
 });
+
+
+// SCROLL TO THE TOP COPIED FROM:
+// https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+
+//Get the button:
+scrollToTheTopButton = document.getElementById("scrollToTheTop");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        scrollToTheTopButton.style.display = "block";
+    } else {
+        scrollToTheTopButton.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 
