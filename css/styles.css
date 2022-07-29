@@ -106,7 +106,7 @@ p {
     grid-area: nav;
 }
 
-#baz-nav>a {
+#baz-nav > a {
     display: inline-block;
     color: #010225d5;
     text-decoration: none;
@@ -116,7 +116,7 @@ p {
     font-size: 1rem;
 }
 
-#baz-nav>a:hover {
+#baz-nav > a:hover {
     border: 0.1rem solid hsla(279, 58%, 47%, 0.5);
     background: hsla(190, 77%, 88%, 0.5);
 }
@@ -208,6 +208,10 @@ p {
     /* border: 0.5rem solid hsla(201, 100%, 36%, 0.5); */
     border: 0.2rem solid hsla(279, 58%, 47%, 1);
     border-radius: 0.25rem;
+}
+
+.share-link:hover {
+    background: hsla(190, 77%, 88%, 1);
 }
 
 .blocks-screenshot {
@@ -428,7 +432,7 @@ p {
     border: 0.25rem solid #caf0f8;
     border-radius: 0.5rem;
     /* background: white; */
-    background: hsla(190, 77%, 88%, 0.75);
+    background: hsla(190, 77%, 88%, 0.5);
     padding: 1rem;
     text-align: center;
 }
@@ -453,7 +457,7 @@ p {
 
 .project-grid-emoji {
     margin: 0;
-    padding: 0;
+    padding: 0.5rem;
     font-size: 3rem;
     background: white;
     border-radius: 25%;
