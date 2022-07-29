@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>CYF Blocks Final Project</title>
+    
+</head>
+
+<body>
+  
+    <section id="root-container">
+        
+        <section id="baz" class="root-cell">
+            <a id="baz-image-link" href="https://github.com/bazmurphy/cyf-blocks-fp" target="_blank"><img id="baz-image"
+                    src="images/bazavatar.jpeg" alt=""></a>
+            <h1 id="baz-title-h1"><a href="https://github.com/bazmurphy/cyf-blocks-fp" target="_blank">Baz</a> : CYF
+                Fundamentals Coursework : CYF Blocks Final Project</h1>
+            <nav id="baz-nav">
+                <a href="index.html">🏠 Home</a>
+                <a href="project-one-commenting.html">💬 Commenting</a>
+                <a href="project-two-shopping-cart-light.html"> 🛒 Shopping Cart Light</a>
+                <a href="project-three-image-carousel.html">🖼️ Image Carousel</a>
+                <a href="project-four-hamburger-menu.html">🍔 Hamburger Menu</a>
+            </nav>
+        </section>
+
+        <section class="root-cell">
+            <h1 class="project-title" id="project-one">Project 1 : 💬 Commenting</h1>
+            <h2>Defined Requirement:</h2>
+            <p>Make it possible for a user to add a comment on your website (the comment won't get saved anywhere, so it will
+                disappear
+                when the page is refreshed - we'll work on saving later on)</p>
+        </section>
+        
+        <section class="root-cell">
+            <h1>Minimum Viable Product & User Stories</h1>
+            <section id="user-stories-mvp">
+                <section class="user-stories-cell user-stories-mvp-heading">Minimum Viable Product</section>
+                <section class="user-stories-cell user-stories-mvp-column-heading-who">As a [who]</section>
+                <section class="user-stories-cell user-stories-mvp-column-heading-what">I can [what]</section>
+                <section class="user-stories-cell user-stories-mvp-column-heading-why">so that [why]</section>
+                <section class="user-stories-cell user-stories-highlight">As a user</section>
+                <section class="user-stories-cell user-stories-highlight">I can write a comment in an input text box and click a
+                    button and it will add my comment to a list of comments on the website</section>
+                <section class="user-stories-cell user-stories-highlight">so that i (and others) can post comments on the
+                    website</section>
+            </section>
+        </section>
+        
+        <section class="root-cell">
+            <h2>Working MVP on Blocks:</h2>
+            <a href="https://blocks.codeyourfuture.io/share.html?v=('j!('blocks!('languageVersion!0~blocks!%5B%7F%7C_clicked%260.%24%5D%3Bx(WTR%24P%60s%3BZh85V'~x!23~y!-529TEXT1!'when%20the%20%7C%20with%20id'~ID!'add-c*'~TEXT2!'is%20clicked')~Os!('HANDLER!('7with_%7C_by_id%26bfuR%2B8r4FNy%7B%2Fln-NWkU'9ID!'c*s-list%5Eadd_%7C%26H%23E%3D%3B(J4%3BH%5Bz-%24tgYI6%3D'9ELEMENT!'li%5Eset_content%26X%25%2FQXoGBi%2Fd(%3Ai%23%5BSX%60('~Os!('VALUE!('shadow!%7Ftext%26B)oKEUyolqQ_%7D_%60%3FGfjs'9TEXT!''))~7get_O_value_with_id%26%3Fy%3D_%60%3F%2C'%60%23)FHYygQP%7DS8'9ID!'O-c*'))))))))))))))%5D))~h!'%3CO%22O-c*%5C'%20type%3D%5C'text%5C'%20placeholder%3D%5C'Your%20c*%5C'%20%2F%40button%22add-c*%5C'%3EAdd%20C*%3C%2Fbutton%40h1%3EC*s%3A%3C%2Fh1%40ul%22c*s-list%5C'%3E%3C%2Ful%3E')*omment7block!%7F9~fields!('Oinput%22%20id%3D%5C'%26'~id!'%40%3E%5Cn%3C%5E')~Os!('STACK!('7%7Celement%7F('type!'%01%7F%7C%5E%40%26%22O97*_"
+                target="_blank" class="share-link">Share Link</a>
+            <img src="images/01-comments/01-comments-blocks-001.png" alt="" class="blocks-screenshot">
+        </section>
+        
+        <section class="root-cell">
+            <h2>Working MVP on Deployed Site:</h2>
+            <section class="deployment">
+                <input id="input-comment" type="text" placeholder="Your comment" />
+                <button id="add-comment">Add Comment</button>
+                <h1 id="comments-title">Comments:</h1>
+                <ul id="comments-list"></ul>
+            </section>
+        </section>
+        
+        <section class="root-cell">
+            <h1>Iterative Development & User Stories</h1>
+            <section id="user-stories-iteration">
+                <section class="user-stories-cell user-stories-iteration-heading">Iteration</section>
+                <section class="user-stories-cell user-stories-iteration-column-heading-who">As a [who]</section>
+                <section class="user-stories-cell user-stories-iteration-column-heading-what">I can [what]</section>
+                <section class="user-stories-cell user-stories-iteration-column-heading-why">so that [why]</section>
+                <section class="user-stories-cell user-stories-highlight">As a user</section>
+                <section class="user-stories-cell user-stories-highlight">I can add my name in another input box</section>
+                <section class="user-stories-cell user-stories-highlight">so that other users and website staff know who wrote
+                    the comment</section>
+                <section class="user-stories-cell user-stories-highlight">As a user</section>
+                <section class="user-stories-cell user-stories-highlight">I will recieve an error message if i do not enter both
+                    a name and a comment</section>
+                <section class="user-stories-cell user-stories-highlight">so that my input is checked and is valid before it is
+                    submitted</section>
+            </section>
+        </section>
+        
+        <section class="root-cell">
+            <h2>Working Iteration on Blocks:</h2>
+            <a href="https://blocks.codeyourfuture.io/share.html?v=('j!('blocks!('languageVersion!0~blocks!%5B('type!'element_clicked'~id!'4iTZ41Wt%2Fqia1%2Bg(HW8t'~x!-4~y!-860%26TEXT1!'when%20the%20element%20with%20id'~ID!'add-comment'~TEXT2!'is%20clicked'%C2%8DHANDLER%C2%868.%25CsDy%7BjqM.(-nrcViq%C2%88clearError')~next%C2%86%5BQFhq1(hO%40%5E%7B%23BXJcAyG%C2%88getInputs')~next%22controls_if'~id!'OeZaH%23(%5En7g%7B%3Fmyc%2BzBN'~extraState!('elseIfCount!1~hasElse!true%C2%8DIF0%C2%97r(%3B%7DgjqNp%23pI%3D5xHz_wG%C2%99%C2%8A'%3A-'%3AaX1a%7C75JW%40VMN%7D%40TW%C2%93%C2%83)))~B%22text'~id!'OvRLH%24C%7BvTnM%5B%3BbV3b%40%23%C2%9A0%C2%86A%24m%5ELCmUij%2Bmk8A.Ugp%24%C2%96IF1%C2%97%2C%5DM.ii%60Q9y'%3A0m%7BmdGHIt%C2%99%C2%8AC_%24Wz9G%2B%2C'%40NyRD5%2FDcj5%C2%93%C2%85)))~B%22text'~id!'NH-.dnShVfza*H5fUqbq%C2%9A1%C2%86%25NYsV6l%5D38l(Shc%2CB(Un%C2%96ELSE%C2%863G%25QDSI_PNObdHFXxg(J%C2%88renderComment')))))%C2%81%5Bd%3DM.EZgNGGGH%60R.4f%40%5D'~x!-4~y!-110%C2%80%C2%84ME!'displayError%7F%C2%8BU%5BI%5B6MhEDH%5BWHf%5D4mM_b'%26ID!'error%C2%8C!'ItSF%5D%5EKk%5DWLLCi1nAn%24J%C2%82wvo%25ioTRn(%5E*Wf)d%23E%2C'l'%26TEXT!'Error%3A%20Please%20enter%20a%20Name%20AND%20a%20Comment'%C2%95set_attribute'~id!'qK%5BpN'%3AgY%7CTzcgvrWI%2B%3BM'%26PROPERTY!'color'%C2%8DVALUE%22colour_picker'~id!'%24aPA%23Bcu%2C'%2C'DqGViy%2Cexz'%26COLOUR!'%23ff0000'))))))%C2%81g%5B31%2Fp8gx5Z0-kUrTs%25Y'~x!-6~y!-488%C2%80%C2%84ME!'renderComment%7F%C2%8BOKoat%2BTAJGMH%3As%3B%24_%5D9%7C'%26ID!'comments-list%7F%C2%8E2j%3D.KSeUJsW)dm%3Fps%2C'V1'%26ELEMENT!'li%7F%C2%8EaX)dNO%7C%23UE(-kwPcyodZ%C2%92%C2%8C!'I%7B%2C'F'%3AHlT'%3ANF%24%25e-wj%60B*%C2%82%3Bg9ooCwF%7DT3yO%3B%5E-CBh%3A'%26%C2%91NqQ3l7zZ%2FX)%3D%408W3%3AidY%C2%93%C2%85)))%C2%95%C2%8E%3Fo%7C%24ZIO5j4%3AzHNW%3DhfXz%C2%92%C2%8C!'d%241oE%3FD%24%5B%5E4n%2BD%24Mel*B%C2%82%25iWfZ-jlJv*QAg%7DrZa6i'%26TEXT!'%20%3A%20')))%C2%95%C2%8EBHAE%5DN4XBE3N%3B64%23K3sa%C2%92%C2%8C!'cB95Y)P(V1E%23bj.gmPgA%C2%82W8MT8zzSPaIEmflxZNMY'%26%C2%91b91JgOWEaCUDi2O%40gm%3BR%C2%93%C2%83))))))))))))))%C2%81N4'%3A%60C(OWG%60%3A2WIkg(%5Bmu'~x!-2~y!26%C2%80%C2%84ME!'clearError%7F%C2%8By%23lMd._Z%24DKK%5D37O8j6Z'%26ID!'error%7Fremove_contents'~id!'ukK%5E%3D94%2C'%3D%40zz%234%5D%24%3B%5BWN'%C2%81%23r%2ClAs%7C.*4'%3Aj_mkbA-t2'~x!-5~y!-582%C2%80%C2%84ME!'getInputs%7F%C2%9Bv%3BR-%2CNwST%5Be%25%2CLXr*yd%7D%C2%93%C2%83%C2%8D%C2%8F!'r6%7BVYg-_h%40jcU2GMKrcZ%C2%98'%C2%95%C2%9BdJ%3Ajw%60x-F%3AjE0lg-tr)k%C2%93%C2%85%C2%8D%C2%8F!'t_vqS.SXLtvppnad5d%5Ek%C2%98er-name'))))))))))%5D)~variables!%5B('name!'innerTexts'~id!'vG%7BTT%2B3%25-EisY0O5(ILp%C2%87hrefs'~id!'%2Br%2BJ(%2BNh%25Ff%2F%5EW%25%40DFo8%C2%87innerText'~id!'nf%2B%2F%60xagnNqa%3FKGCHZ%60%2F%C2%87products'~id!'S%5DS6(rE%2583wS3orI8z(Z%C2%87navigationShowingFlag'~id!'%23(H2AlT-gt%3BvI%5D8wN%7BLY%C2%87product'~id!'J2vR4L6%5DHl%3AX%60%607LB%3BD%7C%C2%87shoppingCart'~id!'6%2BJ%60Ay_C)%3F%7DVh%23yF--7(%C2%87dynamicAddId'~id!'sw%2BW%2B%7DCquOO%5D%7B%5Bn_%2C3%3Ab%C2%87array'~id!'%3F9Rm%2F%3DQYVO%3FHOU2tIQcy%C2%87dynamicRemoveId'~id!'qY%24%3D%23U%7C_%2B%3De%3F%24KWk6oyK%C2%87item'~id!'Cf%2C'-%2C%25RWP-m2paJ%60%5DTQG%C2%87inputCommenterName'~%C2%85%2C('name!'inputComment'~%C2%83%5D)~h!'%C2%90er-name%C2%89name%5C'%2F%3E%5Cn%C2%90%C2%89comment%5C'%2F%3E%5Cn%3Cbutton%C2%94add-comment%5C'%3EAdd%20Comment%3C%2Fbutton%3E%5Cn%3Cdiv%C2%94error%5C'%3E%3C%2Fdiv%3E%5Cn%3Ch1%3EComments%3A%3C%2Fh1%3E%5Cn%3Cul%C2%94comments-list%5C'%3E%3C%2Ful%3E')%22!('block!('type!'%26~fields!('%7F'%C2%8DSTACK%22%C2%80~icons!('comment!('text!'Describe%20this%20function..%C2%81)))))))%2C('type!'procedures_defnoreturn'~id!'%C2%82'~inputs!('VALUE!('shadow!('type!'text'~id!'%C2%83id!'.Zk%7DyU%5EN4%3F9g%40%5B%60k%3F%2CW5')%C2%84.'~pinned!false~height!80~width!160))%26NA%C2%85id!''%3Ao%247D%60(%2CL3m%5B2%7Bg%2F5)x2')%C2%86%22procedures_callnoreturn'~id!'%C2%87')%2C('name!'%C2%88'~extraState!('name!'%C2%89%5C'%20type%3D%5C'text%5C'%20placeholder%3D%5C'Your%20%C2%8Avariables_get'~id!'%C2%8Bwith_element_by_id'~id!'%C2%8C%7Fset_content'~id%C2%8D)~inputs!('%C2%8Eadd_element'~id!'%C2%8FVALUE%22get_input_value_with_id'~id%C2%90%3Cinput%C2%94input-comment%C2%91TEXT!''))~block!('type!'%C2%8A%C2%92'%26ELEMENT!'span%C2%93'%26VAR!('%C2%94%20id%3D%5C'%C2%95))))~next%22%C2%96%C2%88displayError')))~%C2%97%22logic_compare'~id!'%C2%98'%26ID!'input-comment%C2%99'%26OP!'EQ'%C2%8DA%22%C2%9A'%26TEXT!''))))))~DO%C2%9Bvariables_set'~id!'%01%C2%9B%C2%9A%C2%99%C2%98%C2%97%C2%96%C2%95%C2%94%C2%93%C2%92%C2%91%C2%90%C2%8F%C2%8E%C2%8D%C2%8C%C2%8B%C2%8A%C2%89%C2%88%C2%87%C2%86%C2%85%C2%84%C2%83%C2%82%C2%81%C2%80%7F%26%22_"
+                target="_blank" class="share-link">Share Link</a>
+            <img src="images/01-comments/01-comments-blocks-002.png" alt="" class="blocks-screenshot">
+        </section>
+        
+        <section class="root-cell end-of-project">
+            <h2>Working Iteration on Deployed Site:</h1>
+                <section class="deployment">
+                    <input id="input-commenter-name2" type="text" placeholder="Your name" />
+                    <input id="input-comment2" type="text" placeholder="Your comment" />
+                    <button id="add-comment2">Add Comment</button>
+                    <div id="error2"></div>
+                    <h1>Comments:</h1>
+                    <ul id="comments-list2"></ul>
+                </section>
+        </section>
+
+    </section>
+
+    <script src="js/project-one-commenting.js" type="text/javascript"></script>
+
+</body>
+
+</html>

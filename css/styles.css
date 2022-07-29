@@ -9,6 +9,8 @@ body {
     color: #010225d5;
     background: rgb(233, 246, 255);
     background-image: url('../images/dots.png');
+
+    overflow-y: scroll;
 }
 
 #root-container {
@@ -37,8 +39,7 @@ h1 {
     font-size: 1.4rem;
     font-weight: 600;
     padding: 0.25rem;
-    margin-bottom: 0.25rem;
-    
+    margin-bottom: 0.25rem;   
 }
 
 h2 {
@@ -113,6 +114,11 @@ p {
     border-radius: 0.25rem;
     padding: 0.5rem 1rem;
     font-size: 1rem;
+}
+
+#baz-nav>a:hover {
+    border: 0.1rem solid hsla(279, 58%, 47%, 0.5);
+    background: hsla(190, 77%, 88%, 0.5);
 }
 
 #user-stories-mvp,
@@ -388,4 +394,86 @@ p {
 
 #total-price2 {
     margin-top: 1rem;
+}
+
+#project-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "project-one project-two"
+    "project-three project-four";
+    row-gap: 2rem;
+    column-gap: 2rem;
+    /* padding: 2rem; */
+}
+
+#project-one {
+    grid-area: project-one;
+}
+
+#project-two {
+    grid-area: project-two;
+}
+
+#project-three {
+    grid-area: project-three;
+}
+
+#project-four {
+    grid-area: project-four;
+}
+
+.project-grid-cell {
+    border: 0.25rem solid #caf0f8;
+    border-radius: 0.5rem;
+    /* background: white; */
+    background: hsla(190, 77%, 88%, 0.75);
+    padding: 1rem;
+    text-align: center;
+}
+
+.project-grid-cell:hover {
+    background: hsla(190, 77%, 88%, 1);
+    border: 0.25rem solid hsla(279, 58%, 47%, 0.5);
+}
+
+.project-grid-cell a {
+    color: #010225d5;
+    text-decoration: none;
+}
+
+.project-grid-header-two {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    padding-bottom: 0.5rem;
+}
+
+.project-grid-emoji {
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    background: white;
+    border-radius: 25%;
+    border: 0.1rem solid hsla(190, 77%, 60%, 0.5);
+}
+
+.project-grid-header-one {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.project-grid-paragraph {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font-style: italic;
 }
