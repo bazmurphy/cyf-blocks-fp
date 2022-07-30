@@ -9,7 +9,7 @@ body {
     color: #010225d5;
     background: rgb(233, 246, 255);
     background-image: url('../images/dots.png');
-
+    /* overflow neccessary to stop "jumping feeling" between home and other pages */
     overflow-y: scroll;
 }
 
@@ -72,29 +72,35 @@ p {
     display: grid;
     grid-template-columns: 1fr 8fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "image title"
+    grid-template-areas: 
+        "image title"
         "image nav";
-    align-items: center;
+    column-gap: 0.5rem;
 }
 
 #baz-image-link {
-    margin: 0;
-    display: block;
     grid-area: image;
+    display: block;
+    margin: 0;
+    padding: 0;
+    justify-self: center;
 }
 
 #baz-image {
     margin: 0;
+    padding: 0;
+    border: 0;
     display: block;
     width: 5rem;
     height: 5rem;
     border-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.2rem darkgray;
 }
 
 #baz-title-h1 {
     grid-area: title;
-    border: none;
-    background: none;
+    border: 0;
+    background: 0;
 }
 
 #baz-title-h1 a {
@@ -104,10 +110,13 @@ p {
 
 #baz-nav {
     grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.25rem;
+    
 }
 
 #baz-nav > a {
-    display: inline-block;
     color: #010225d5;
     text-decoration: none;
     border: 0.1rem solid #caf0f8;
@@ -119,6 +128,93 @@ p {
 #baz-nav > a:hover {
     border: 0.1rem solid hsla(279, 58%, 47%, 0.5);
     background: hsla(190, 77%, 88%, 0.5);
+}
+
+
+
+#project-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "project-one project-two"
+        "project-three project-four";
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+.project-grid-cell {
+    border: 0.25rem solid #caf0f8;
+    border-radius: 0.5rem;
+    background: hsla(190, 77%, 88%, 0.5);
+    padding: 1rem;
+    text-align: center;
+}
+
+#project-one {
+    grid-area: project-one;
+}
+
+#project-two {
+    grid-area: project-two;
+}
+
+#project-three {
+    grid-area: project-three;
+}
+
+#project-four {
+    grid-area: project-four;
+}
+
+.project-grid-cell:hover {
+    background: hsla(190, 77%, 88%, 1);
+    border: 0.25rem solid hsla(279, 58%, 47%, 0.5);
+}
+
+.project-grid-cell a {
+    color: #010225d5;
+    text-decoration: none;
+}
+
+.project-grid-header-two {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: 0;
+    padding-bottom: 0.5rem;
+}
+
+.project-grid-emoji {
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 3rem;
+    background: white;
+    border-radius: 25%;
+    border: 0.1rem solid hsla(190, 77%, 60%, 0.5);
+}
+
+.project-grid-header-one {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: 0;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.project-grid-paragraph {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: 0;
+    font-style: italic;
+}
+
+.project-title {
+    font-weight: 700;
+    font-size: 2rem;
 }
 
 #user-stories-mvp,
@@ -198,6 +294,11 @@ p {
     font-style: italic;
 }
 
+.user-stories-highlight {
+    color: hsla(279, 58%, 47%, 1);
+    font-weight: 600;
+}
+
 .share-link {
     display: inline-block;
     margin: 0.5rem 0;
@@ -229,12 +330,13 @@ p {
 .deployment h1, 
 .deployment h2, 
 .deployment h3 {
-    margin: none;
-    padding: none;
-    background: none;
-    border: none;
+    margin: 0;
+    padding: 0;
+    background: 0;
+    border: 0;
 }
 
+/* project 01 comments styling */
 #input-comment,
 #add-comment, 
 #input-comment2,
@@ -249,6 +351,7 @@ p {
     margin-top: 0.5rem;
 }
 
+/* project 02 shopping cart light styling */
 #products-list li, 
 #products-list2 li {
     padding: 0.25rem;
@@ -266,17 +369,8 @@ p {
     margin-bottom: 1rem;    
 }
 
-.user-stories-highlight {
-    color: hsla(279, 58%, 47%, 1);
-    font-weight: 600;
-}
 
-.project-title {
-    font-weight: 700;
-    font-size: 2rem;
-}
-
-
+/* project 03 image carousel styling */
 #carousel-image,
 #carousel-image2 {
     display: block;
@@ -295,7 +389,7 @@ p {
     cursor: pointer;
 }
 
-
+/* project 04 hamburger menu styling */
 #navigation {
     width: 10rem;
     height: 2rem;
@@ -376,108 +470,26 @@ p {
     padding: 0.5rem 0;
 }
 
-#scrollToTheTop {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Fixed/sticky position */
-    z-index: 99;
-    /* Make sure it does not overlap */
-    bottom: 2rem;
-    right: 1rem;
-    cursor: pointer;
-    /* Add a mouse pointer on hover */
-    padding: 0.25rem;
-    background: hsla(190, 77%, 88%, 0.5);
-    border: 0.1rem solid #caf0f8;
-    border-radius: 0.25rem;
-    color: #010225d5;
-    font-family: 'Cabin', sans-serif;
-    font-size: 1rem;
-}
-
 #total-price2 {
     margin-top: 1rem;
 }
 
-#project-grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "project-one project-two"
-    "project-three project-four";
-    row-gap: 2rem;
-    column-gap: 2rem;
-    /* padding: 2rem; */
-}
 
-#project-one {
-    grid-area: project-one;
-}
+@media only screen and (max-width: 600px) {
+    #project-grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "project-one"
+            "project-two"
+            "project-three"
+            "project-four";
+    }
 
-#project-two {
-    grid-area: project-two;
-}
+    #baz-nav {
+        flex-direction: column;
+        row-gap: 0.25rem;
+        column-gap: 0;
+    }
 
-#project-three {
-    grid-area: project-three;
-}
-
-#project-four {
-    grid-area: project-four;
-}
-
-.project-grid-cell {
-    border: 0.25rem solid #caf0f8;
-    border-radius: 0.5rem;
-    /* background: white; */
-    background: hsla(190, 77%, 88%, 0.5);
-    padding: 1rem;
-    text-align: center;
-}
-
-.project-grid-cell:hover {
-    background: hsla(190, 77%, 88%, 1);
-    border: 0.25rem solid hsla(279, 58%, 47%, 0.5);
-}
-
-.project-grid-cell a {
-    color: #010225d5;
-    text-decoration: none;
-}
-
-.project-grid-header-two {
-    margin: 0;
-    padding: 0;
-    border: none;
-    background: none;
-    padding-bottom: 0.5rem;
-}
-
-.project-grid-emoji {
-    margin: 0;
-    padding: 0.5rem;
-    font-size: 3rem;
-    background: white;
-    border-radius: 25%;
-    border: 0.1rem solid hsla(190, 77%, 60%, 0.5);
-}
-
-.project-grid-header-one {
-    margin: 0;
-    padding: 0;
-    border: none;
-    background: none;
-    font-size: 2.5rem;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-}
-
-.project-grid-paragraph {
-    margin: 0;
-    padding: 0;
-    border: none;
-    background: none;
-    font-style: italic;
 }
